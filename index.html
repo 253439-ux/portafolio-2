@@ -1,0 +1,471 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Rey Emiliano Romero Suárez — Desarrollador Full Stack</title>
+<meta name="description" content="Rey Emiliano Romero Suárez — desarrollador full stack. Diseño web, desarrollo de sistemas y crecimiento digital. Mira BakingDesk, un sistema de gestión real, funcionando." />
+ 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+ 
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="antialiased">
+ 
+<!-- ======= NAV ======= -->
+<div class="sticky top-4 z-40 mx-auto max-w-5xl px-4">
+  <nav class="pill-nav flex items-center justify-between rounded-full px-6 py-3">
+    <a href="#inicio" class="font-display text-xl font-bold">Rey<span class="text-accent">.k1ng</span></a>
+    <div class="hidden gap-7 text-sm text-[#C7C7CE] md:flex">
+      <a href="#inicio" class="hover:text-accent">HOME</a>
+      <a href="#sobre-mi" class="hover:text-accent">SOBRE MÍ</a>
+      <a href="#servicios" class="hover:text-accent">SERVICIOS</a>
+      <a href="#proyecto" class="hover:text-accent">PROYECTO</a>
+      <a href="#certificaciones" class="hover:text-accent">SKILLS</a>
+      <a href="#contacto" class="hover:text-accent">CONTACTO</a>
+    </div>
+    <a href="https://wa.me/529671613668" target="_blank" rel="noopener" class="grad-btn rounded-full px-4 py-2 text-xs font-semibold text-[#150505] md:text-sm">
+      Contactar
+    </a>
+  </nav>
+</div>
+ 
+<!-- ======= HERO ======= -->
+<header id="inicio" class="mx-auto max-w-6xl px-6 pb-16 pt-20 md:pt-28">
+  <div class="grid grid-cols-1 items-center gap-14 md:grid-cols-[1.05fr_1fr]">
+    <div>
+      <p class="font-display text-sm font-semibold uppercase tracking-widest text-accent">Bienvenido</p>
+      <h1 class="font-display mt-3 text-4xl font-bold leading-[1.1] sm:text-5xl">
+        Hola, soy <span class="text-accent glow">Emiliano</span>
+      </h1>
+      <p class="mt-5 max-w-[48ch] text-[15px] leading-relaxed text-[#B4B4BD]">
+        Desarrollador full stack enfocado en construir sistemas modernos, funcionales
+        y fáciles de usar. Con experiencia creciente en Java, JavaScript y bases de
+        datos, diseño soluciones que resuelven problemas reales de negocio.
+      </p>
+ 
+      <div class="mt-8 grid grid-cols-3 gap-3 sm:gap-4">
+        <div class="stat-box rounded-xl px-3 py-4 text-center sm:px-5">
+          <p class="font-display text-2xl font-bold text-accent sm:text-3xl">1+</p>
+          <p class="mt-1 text-[11px] text-[#9A9AA5] sm:text-xs">Sistema en producción</p>
+        </div>
+        <div class="stat-box rounded-xl px-3 py-4 text-center sm:px-5">
+          <p class="font-display text-2xl font-bold text-accent sm:text-3xl">2+</p>
+          <p class="mt-1 text-[11px] text-[#9A9AA5] sm:text-xs">Años programando</p>
+        </div>
+        <div class="stat-box rounded-xl px-3 py-4 text-center sm:px-5">
+          <p class="font-display text-2xl font-bold text-accent sm:text-3xl">6+</p>
+          <p class="mt-1 text-[11px] text-[#9A9AA5] sm:text-xs">Tecnologías</p>
+        </div>
+      </div>
+ 
+      <div class="mt-8 flex flex-wrap items-center gap-4">
+        <a href="#proyecto" class="grad-btn flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold text-[#150505]">
+          Ver proyecto <span aria-hidden="true">→</span>
+        </a>
+        <a href="#" id="btn-cv" class="rounded-full border border-[var(--line)] px-6 py-3 text-sm font-semibold text-[var(--ink)] hover:border-accent hover:text-accent">
+          Descargar CV
+        </a>
+      </div>
+ 
+      <div class="mt-8 flex items-center gap-4 text-[#9A9AA5]">
+        <a href="https://github.com/253439-ux" target="_blank" rel="noopener" class="hover:text-accent" aria-label="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.5 0 12.3c0 5.44 3.44 10.05 8.21 11.68.6.11.82-.27.82-.6v-2.1c-3.34.74-4.04-1.65-4.04-1.65-.55-1.43-1.33-1.81-1.33-1.81-1.09-.76.08-.74.08-.74 1.2.09 1.84 1.26 1.84 1.26 1.07 1.87 2.8 1.33 3.49 1.02.1-.79.42-1.33.76-1.64-2.66-.31-5.47-1.36-5.47-6.05 0-1.34.46-2.43 1.24-3.29-.13-.31-.54-1.56.12-3.25 0 0 1-.33 3.3 1.26a11.2 11.2 0 015.99 0c2.29-1.59 3.29-1.26 3.29-1.26.66 1.69.25 2.94.12 3.25.78.86 1.24 1.95 1.24 3.29 0 4.7-2.81 5.74-5.49 6.04.43.38.81 1.13.81 2.28v3.38c0 .33.22.72.83.6C20.57 22.34 24 17.74 24 12.3 24 5.5 18.63 0 12 0z"/></svg>
+        </a>
+        <a href="https://wa.me/529671613668" target="_blank" rel="noopener" class="hover:text-accent" aria-label="WhatsApp">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.81.48 3.5 1.32 4.96L2 22l5.25-1.38a9.86 9.86 0 004.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm5.78 14.13c-.24.68-1.4 1.3-1.93 1.38-.5.08-1.06.11-1.7-.11-.4-.13-.9-.29-1.56-.57-2.74-1.18-4.53-3.93-4.66-4.11-.14-.18-1.11-1.48-1.11-2.82 0-1.34.7-2 .95-2.27.24-.27.53-.34.71-.34.18 0 .35 0 .5.01.16.01.38-.06.6.46.24.57.8 1.99.87 2.13.07.14.12.31.02.5-.1.18-.15.29-.29.45-.14.16-.3.36-.43.48-.14.13-.29.28-.13.55.16.27.72 1.19 1.55 1.92 1.06.94 1.96 1.24 2.23 1.38.27.14.43.11.59-.07.16-.18.68-.79.86-1.06.18-.27.36-.22.6-.13.24.09 1.53.72 1.79.85.26.13.44.2.5.31.06.11.06.63-.18 1.31z"/></svg>
+        </a>
+        <a href="mailto:253439@it2id.upchiapas.edu.mx" class="hover:text-accent" aria-label="Correo">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+        </a>
+      </div>
+    </div>
+ 
+    <!-- Panel visual del hero: terminal con el theme rojo -->
+    <div class="relative mx-auto w-full max-w-[420px]">
+      <span class="absolute -top-4 right-6 z-10 flex items-center gap-1.5 rounded-full border border-[var(--line)] bg-[var(--panel-2)] px-3 py-1.5 text-xs">
+        <span class="h-1.5 w-1.5 rounded-full bg-accent"></span> Responsive
+      </span>
+      <span class="absolute -bottom-4 left-6 z-10 flex items-center gap-1.5 rounded-full border border-[var(--line)] bg-[var(--panel-2)] px-3 py-1.5 text-xs">
+        <span class="h-1.5 w-1.5 rounded-full bg-accent"></span> Código limpio
+      </span>
+ 
+      <div class="browser-frame">
+        <div class="browser-frame__bar">
+          <span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-dot"></span>
+          <span class="ml-2 font-display text-xs text-[#6B6B75]">portfolio.dev</span>
+        </div>
+        <pre id="hero-terminal" class="min-h-[260px] whitespace-pre-wrap break-words p-5 font-display text-[13px] leading-relaxed text-[#C7C7CE]"><span class="text-accent">visitor@portfolio</span><span class="text-[#6B6B75]">:~$</span> <span id="hero-terminal-output"></span><span id="hero-cursor" class="inline-block w-[7px] bg-accent animate-pulse">&nbsp;</span></pre>
+      </div>
+    </div>
+  </div>
+</header>
+ 
+<!-- ======= SOBRE MÍ ======= -->
+<section id="sobre-mi" class="mx-auto max-w-6xl px-6 py-20">
+  <div class="grid grid-cols-1 gap-12 md:grid-cols-[0.85fr_1.15fr] md:items-start">
+    <div class="relative overflow-hidden rounded-2xl border border-[var(--line)] bg-gradient-to-br from-[#1D1D24] to-[#0A0A0D]">
+      <span class="absolute left-4 top-4 rounded-full bg-accent px-3 py-1.5 font-display text-xs font-semibold text-[#150505]">
+        2+ años aprendiendo
+      </span>
+      <div class="flex aspect-[4/5] items-center justify-center">
+        <span class="font-display text-7xl font-bold text-[#2A2A33]">RE</span>
+      </div>
+    </div>
+ 
+    <div>
+      <p class="font-display text-sm font-semibold uppercase tracking-widest text-accent">Sobre mí</p>
+      <h2 class="font-display mt-2 text-3xl font-bold sm:text-4xl">¿Quién está detrás del código?</h2>
+      <p class="mt-5 text-[15px] leading-relaxed text-[#B4B4BD]">
+        Soy Rey Emiliano Romero Suárez, estudiante de Ingeniería en tecnologias de la información e innovacion dígital.
+        Mi propósito es construir softwares que ayuden a mi crecimiento como desarrollador y profesional y así
+        resolver todas las necesidades u/o problemas de mi usuario o entorno.
+        Mi principal fuerte es siempre llevar  mis conocimiento y capacidades mas allá de lo común para 
+        estar a la dispocion de cualquier adbersidad y resolverla sin nigun tipo de problema.
+    
+        <p class="mt-5 text-[15px] leading-relaxed text-[#B4B4BD]">
+         Mi objetivo es mejorar cada día, generar confianza en lo que hago y ser un ingeniero de primera.
+        </p>
+ 
+      <div class="mt-7 grid grid-cols-1 gap-4 sm:grid-cols-2">
+        <div class="card flex items-center gap-4 rounded-xl p-4">
+          <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-accent/15 text-accent">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-4.5-7-11a7 7 0 0114 0c0 6.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          </span>
+          <div>
+            <p class="text-xs text-[#9A9AA5]">Ubicación</p>
+            <p class="text-sm font-medium">San Cristobal de las Casas, Chiapas, México</p>
+          </div>
+        </div>
+        <div class="card flex items-center gap-4 rounded-xl p-4">
+          <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-accent/15 text-accent">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.7a2 2 0 01-.4 2.1L8.1 9.7a16 16 0 006 6l1.2-1.2a2 2 0 012.1-.4c.9.3 1.8.5 2.7.6a2 2 0 011.9 2.2z"/></svg>
+          </span>
+          <div>
+            <p class="text-xs text-[#9A9AA5]">WhatsApp</p>
+            <p class="text-sm font-medium">+52 967 161 3668</p>
+          </div>
+        </div>
+      </div>
+ 
+      <a href="#" id="btn-cv-2" class="mt-7 inline-block rounded-full border border-[var(--line)] px-6 py-3 text-sm font-semibold hover:border-accent hover:text-accent">
+        Descargar CV
+      </a>
+    </div>
+  </div>
+</section>
+ 
+<!-- ======= SERVICIOS ======= -->
+<section id="servicios" class="border-y border-[var(--line)] bg-[var(--panel)]/40 py-20">
+  <div class="mx-auto max-w-6xl px-6">
+    <div class="mb-12 text-center">
+      <p class="font-display text-sm font-semibold uppercase tracking-widest text-accent">Qué hago</p>
+      <h2 class="font-display mt-2 text-3xl font-bold sm:text-4xl">Mis servicios</h2>
+    </div>
+ 
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+      <div class="card rounded-2xl p-7">
+        <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-full grad-btn text-[#150505]">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v5"/></svg>
+        </div>
+        <h3 class="font-display mb-2 text-lg font-semibold">Diseño Web</h3>
+        <p class="mb-5 text-sm leading-relaxed text-[#9A9AA5]">
+          Interfaces claras y con jerarquía visual, para que tu cliente entienda en
+          segundos qué ofreces y qué hacer a continuación.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span class="tag rounded-full px-3 py-1 text-xs font-medium">UI/UX</span>
+          <span class="tag rounded-full px-3 py-1 text-xs font-medium">Figma</span>
+        </div>
+      </div>
+ 
+      <div class="card rounded-2xl p-7">
+        <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-full grad-btn text-[#150505]">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 9l-5 5 5 5M16 9l5 5-5 5M14 4l-4 20"/></svg>
+        </div>
+        <h3 class="font-display mb-2 text-lg font-semibold">Desarrollo Full Stack</h3>
+        <p class="mb-5 text-sm leading-relaxed text-[#9A9AA5]">
+          Del front-end al back-end y la base de datos: sistemas de gestión,
+          dashboards y paneles que se sostienen en producción.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span class="tag rounded-full px-3 py-1 text-xs font-medium">Java</span>
+          <span class="tag rounded-full px-3 py-1 text-xs font-medium">JavaScript</span>
+          <span class="tag rounded-full px-3 py-1 text-xs font-medium">MySQL</span>
+        </div>
+      </div>
+ 
+      <div class="card rounded-2xl p-7">
+        <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-full grad-btn text-[#150505]">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 17l6-6 4 4 8-8M15 7h6v6"/></svg>
+        </div>
+        <h3 class="font-display mb-2 text-lg font-semibold">Crecimiento</h3>
+        <p class="mb-5 text-sm leading-relaxed text-[#9A9AA5]">
+          SEO técnico, rendimiento y una estructura de página orientada a que el
+          tráfico se convierta en mensajes o cotizaciones reales.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span class="tag rounded-full px-3 py-1 text-xs font-medium">SEO</span>
+          <span class="tag rounded-full px-3 py-1 text-xs font-medium">Performance</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ======= PROYECTO DESTACADO ======= -->
+<section id="proyecto" class="mx-auto max-w-6xl px-6 py-20">
+  <div class="mb-12 text-center">
+    <p class="font-display text-sm font-semibold uppercase tracking-widest text-accent">Proyectos</p>
+    <h2 class="font-display mt-2 text-3xl font-bold sm:text-4xl">Lo que he construido</h2>
+    <p class="mx-auto mt-3 max-w-[55ch] text-sm text-[#9A9AA5]">
+      Haz clic en cualquier tarjeta interactiva para entrar de verdad, no es una foto.
+    </p>
+  </div>
+
+  <!-- Contenedor con items-stretch para forzar la misma altura -->
+  <div class="grid grid-cols-1 gap-6 md:grid-cols-3 items-stretch">
+    <!-- BakingDesk -->
+    <button class="js-open-demo card group overflow-hidden rounded-2xl text-left flex flex-col h-full"
+            data-src="demo/login.html"
+            data-label="bakingdesk.demo — usuario: demo / contraseña: demo123">
+      <div class="flex aspect-video w-full items-center justify-center bg-gradient-to-br from-[#FBE1E7] to-[#F3C8D2]">
+        <div class="flex flex-col items-center gap-3 text-[#8a3b4e]">
+          <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 3l14 9-14 9V3z"/></svg>
+          <span class="font-display text-xs font-semibold">Clic para entrar</span>
+        </div>
+      </div>
+      <div class="p-6 flex flex-col flex-grow">
+        <h3 class="font-display mb-2 text-lg font-semibold">BakingDesk</h3>
+        <p class="mb-4 text-sm leading-relaxed text-[#9A9AA5]">
+          Sistema de gestión para repostería: pedidos, productos, inventario y finanzas.
+        </p>
+        <div class="flex flex-wrap gap-2 mt-auto">
+          <span class="tag rounded-full px-3 py-1 text-xs font-medium">Java</span>
+          <span class="tag rounded-full px-3 py-1 text-xs font-medium">MySQL</span>
+          <span class="tag rounded-full px-3 py-1 text-xs font-medium">JS</span>
+        </div>
+      </div>
+    </button>
+
+    <!-- Sumas de Riemann -->
+    <button class="js-open-demo card group overflow-hidden rounded-2xl text-left flex flex-col h-full"
+            data-src="demo/riemann/index.html"
+            data-label="riemann.demo — calculadora interactiva">
+      <div class="flex aspect-video w-full items-center justify-center bg-gradient-to-br from-[#E4E9FD] to-[#C7D2FB]">
+        <div class="flex flex-col items-center gap-3 text-[#3B4A9C]">
+          <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3v18h18"/><path d="M7 16l4-6 4 3 4-7"/></svg>
+          <span class="font-display text-xs font-semibold">Clic para calcular</span>
+        </div>
+      </div>
+      <div class="p-6 flex flex-col flex-grow">
+        <h3 class="font-display mb-2 text-lg font-semibold">Sumas de Riemann</h3>
+        <p class="mb-4 text-sm leading-relaxed text-[#9A9AA5]">
+          Calculadora visual que aproxima el área bajo una curva, con gráfica interactiva en tiempo real.
+        </p>
+        <div class="flex flex-wrap gap-2 mt-auto">
+          <span class="tag rounded-full px-3 py-1 text-xs font-medium">JavaScript</span>
+          <span class="tag rounded-full px-3 py-1 text-xs font-medium">Plotly</span>
+          <span class="tag rounded-full px-3 py-1 text-xs font-medium">Math.js</span>
+        </div>
+      </div>
+    </button>
+
+    <!-- SwipeMarket (En proceso) -->
+    <div class="card relative overflow-hidden rounded-2xl text-left flex flex-col h-full">
+      <span class="absolute right-4 top-4 z-10 rounded-full bg-accent px-3 py-1 font-display text-[11px] font-semibold text-[#150505]">
+        En proceso
+      </span>
+      <div class="flex aspect-video w-full flex-col items-center justify-center gap-3 bg-gradient-to-br from-[#1D1D24] to-[#0A0A0D]">
+        <!-- Icono modificado al estilo medallas "Próximamente" -->
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#6B6B75" stroke-width="1.8"><circle cx="12" cy="9" r="6"/><path d="M9 14l-2 7 5-3 5 3-2-7"/></svg>
+        <span class="font-display text-sm text-[#6B6B75]">Próximamente</span>
+      </div>
+      <div class="p-6 flex flex-col flex-grow">
+        <h3 class="font-display mb-2 text-lg font-semibold">SwipeMarket</h3>
+        <p class="mb-4 text-sm leading-relaxed text-[#9A9AA5]">
+          Plataforma para conectar compradores y vendedores con funciones nuevas e interactivas. Ahora mismo se esta elaborando — 
+        </p>
+         <p class="mb-4 text-sm leading-relaxed text-[#9A9AA5]">
+          ¡pronto podrás probarla aquí también!.
+         </p>
+        <div class="flex flex-wrap gap-2 mt-auto">
+          <span class="tag rounded-full px-3 py-1 text-xs font-medium">En desarrollo</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ======= CERTIFICACIONES / SKILLS ======= -->
+<section id="certificaciones" class="border-y border-[var(--line)] bg-[var(--panel)]/40 py-20">
+  <div class="mx-auto max-w-6xl px-6">
+    <div class="mb-12 text-center">
+      <p class="font-display text-sm font-semibold uppercase tracking-widest text-accent">Skills &amp; certificados</p>
+      <h2 class="font-display mt-2 text-3xl font-bold sm:text-4xl">Con lo que trabajo</h2>
+    </div>
+ 
+    <div class="mb-14 grid grid-cols-2 gap-4 sm:grid-cols-4 md:grid-cols-6">
+      <div class="card flex flex-col items-center gap-2 rounded-xl py-5">
+        <span class="font-display text-lg font-bold text-[#E34F26]">HTML</span>
+      </div>
+      <div class="card flex flex-col items-center gap-2 rounded-xl py-5">
+        <span class="font-display text-lg font-bold text-[#2965F1]">CSS</span>
+      </div>
+      <div class="card flex flex-col items-center gap-2 rounded-xl py-5">
+        <span class="font-display text-lg font-bold text-[#F0DB4F]">JS</span>
+      </div>
+      <div class="card flex flex-col items-center gap-2 rounded-xl py-5">
+        <span class="font-display text-lg font-bold text-[#ED8B00]">Java</span>
+      </div>
+      <div class="card flex flex-col items-center gap-2 rounded-xl py-5">
+        <span class="font-display text-lg font-bold text-[#4479A1]">MySQL</span>
+      </div>
+      <div class="card flex flex-col items-center gap-2 rounded-xl py-5">
+        <span class="font-display text-lg font-bold text-accent">Git</span>
+      </div>
+      <div class="card flex flex-col items-center gap-2 rounded-xl py-5">
+        <span class="font-display text-lg font-bold text-[#659AD2]">C++</span>
+      </div>
+      <div class="card flex flex-col items-center gap-2 rounded-xl py-5">
+        <span class="font-display text-sm font-bold text-[#1BA0D7]">Cisco</span>
+      </div>
+    </div>
+ 
+    <p class="mb-6 text-center text-sm text-[#9A9AA5]">Medallas y certificados de cursos</p>
+    <div class="grid grid-cols-2 gap-6 sm:grid-cols-4">
+      <a href="img/certs/aws-cloud-foundations.png" target="_blank" rel="noopener"
+         class="card group flex flex-col items-center justify-between gap-4 rounded-2xl p-6 text-center hover:border-accent">
+        <img src="img/certs/aws-cloud-foundations.png"
+             alt="Certificado: AWS Academy Cloud Foundations — AWS Academy"
+             class="h-40 w-full object-contain transition-transform group-hover:scale-105 sm:h-48" />
+        <span class="font-display text-sm leading-tight text-[#C7C7CE]">AWS Cloud Foundations</span>
+      </a>
+      <a href="img/certs/cisco-introduction-iot.png" target="_blank" rel="noopener"
+         class="card group flex flex-col items-center justify-between gap-4 rounded-2xl p-6 text-center hover:border-accent">
+        <img src="img/certs/cisco-introduction-iot.png"
+             alt="Certificado: Introduction to Internet of Things — Cisco Networking Academy"
+             class="h-40 w-full object-contain transition-transform group-hover:scale-105 sm:h-48" />
+        <span class="font-display text-sm leading-tight text-[#C7C7CE]">Introduction to IoT</span>
+      </a>
+
+      <a href="img/certs/operating-systems-basics.png" target="_blank" rel="noopener"
+         class="card group flex flex-col items-center justify-between gap-4 rounded-2xl p-6 text-center hover:border-accent">
+        <img src="img/certs/operating-systems-basics.png"
+             alt="Certificado: Operating Systems Basics — Cisco Networking Academy"
+             class="h-40 w-full object-contain transition-transform group-hover:scale-105 sm:h-48" />
+        <span class="font-display text-sm leading-tight text-[#C7C7CE]">Operating Systems Basics</span>
+      </a>
+
+       <a href="img/certs/networking-basics.png" target="_blank" rel="noopener"
+         class="card group flex flex-col items-center justify-between gap-4 rounded-2xl p-6 text-center hover:border-accent">
+        <img src="img/certs/networking-basics.png"
+             alt="Certificado: Networking Basics — Cisco Networking Academy"
+             class="h-40 w-full object-contain transition-transform group-hover:scale-105 sm:h-48" />
+        <span class="font-display text-sm leading-tight text-[#C7C7CE]">Networking Basics</span>
+      </a>
+ 
+      <!-- A partir de aquí, cada certificado nuevo que agregues va con class="cert-extra hidden"
+           para que empiece oculto y el botón "Ver más" lo muestre. -->
+      <div class="cert-extra hidden placeholder-card flex min-h-[220px] flex-col items-center justify-center gap-3 rounded-2xl p-6 text-center sm:min-h-[260px]">
+         <a href="img/certs/operating-systems-support.png" target="_blank" rel="noopener"
+         class="card group flex flex-col items-center justify-between gap-4 rounded-2xl p-6 text-center hover:border-accent">
+        <img src="img/certs/operating-systems-support.png"
+             alt="Certificado: Operating Systems Support — Cisco Networking Academy"
+             class="h-40 w-full object-contain transition-transform group-hover:scale-105 sm:h-48" />
+        <span class="font-display text-sm leading-tight text-[#C7C7CE]">Operating Systems Support</span>
+      </a> 
+      </div>
+      <div class="cert-extra hidden placeholder-card flex min-h-[220px] flex-col items-center justify-center gap-3 rounded-2xl p-6 text-center sm:min-h-[260px]">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#6B6B75" stroke-width="1.8"><circle cx="12" cy="9" r="6"/><path d="M9 14l-2 7 5-3 5 3-2-7"/></svg>
+        <span class="font-display text-sm text-[#6B6B75]">Próximamente</span>
+      </div>
+    </div>
+ 
+    <div class="mt-8 flex justify-center">
+      <button id="btn-ver-mas-certs" class="rounded-full border border-[var(--line)] px-6 py-3 text-sm font-semibold hover:border-accent hover:text-accent">
+        Ver más certificados
+      </button>
+    </div>
+  </div>
+</section>
+ 
+ 
+<!-- ======= CONTACTO ======= -->
+<section id="contacto" class="mx-auto max-w-6xl px-6 py-20">
+  <div class="mb-12 text-center">
+    <p class="font-display text-sm font-semibold uppercase tracking-widest text-accent">Contacto</p>
+    <h2 class="font-display mt-2 text-3xl font-bold sm:text-4xl">¿Tienes un proyecto en mente?</h2>
+  </div>
+ 
+  <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+    <div class="flex flex-col gap-4">
+      <a href="https://wa.me/529671613668" target="_blank" rel="noopener" class="card flex items-center gap-4 rounded-2xl p-5 hover:border-accent">
+        <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#25D366]/15 text-[#25D366]">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.81.48 3.5 1.32 4.96L2 22l5.25-1.38a9.86 9.86 0 004.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2z"/></svg>
+        </span>
+        <div>
+          <p class="font-display text-sm font-semibold">Mi WhatsApp</p>
+          <p class="text-xs text-[#9A9AA5]">+52 967 161 3668 — respuesta rápida</p>
+        </div>
+      </a>
+ 
+      <a href="mailto:253439@it2id.upchiapas.edu.mx" class="card flex items-center gap-4 rounded-2xl p-5 hover:border-accent">
+        <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-accent/15 text-accent">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+        </span>
+        <div>
+          <p class="font-display text-sm font-semibold">Mi correo</p>
+          <p class="text-xs text-[#9A9AA5]">253439@it2id.upchiapas.edu.mx</p>
+        </div>
+      </a>
+ 
+      <a href="https://github.com/253439-ux" target="_blank" rel="noopener" class="card flex items-center gap-4 rounded-2xl p-5 hover:border-accent">
+        <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white/10 text-white">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.5 0 12.3c0 5.44 3.44 10.05 8.21 11.68.6.11.82-.27.82-.6v-2.1c-3.34.74-4.04-1.65-4.04-1.65-.55-1.43-1.33-1.81-1.33-1.81-1.09-.76.08-.74.08-.74 1.2.09 1.84 1.26 1.84 1.26 1.07 1.87 2.8 1.33 3.49 1.02.1-.79.42-1.33.76-1.64-2.66-.31-5.47-1.36-5.47-6.05 0-1.34.46-2.43 1.24-3.29-.13-.31-.54-1.56.12-3.25 0 0 1-.33 3.3 1.26a11.2 11.2 0 015.99 0c2.29-1.59 3.29-1.26 3.29-1.26.66 1.69.25 2.94.12 3.25.78.86 1.24 1.95 1.24 3.29 0 4.7-2.81 5.74-5.49 6.04.43.38.81 1.13.81 2.28v3.38c0 .33.22.72.83.6C20.57 22.34 24 17.74 24 12.3 24 5.5 18.63 0 12 0z"/></svg>
+        </span>
+        <div>
+          <p class="font-display text-sm font-semibold">Mi GitHub</p>
+          <p class="text-xs text-[#9A9AA5]">github.com/253439-ux</p>
+        </div>
+      </a>
+    </div>
+ 
+    <form id="form-contacto" class="card flex flex-col gap-4 rounded-2xl p-6">
+      <h3 class="font-display text-sm font-semibold uppercase tracking-widest text-accent">Envíame un mensaje</h3>
+      <input required id="f-nombre" type="text" placeholder="Tu nombre" class="rounded-lg border border-[var(--line)] bg-[var(--panel-2)] px-4 py-3 text-sm outline-none focus:border-accent" />
+      <input id="f-empresa" type="text" placeholder="Tu correo (opcional)" class="rounded-lg border border-[var(--line)] bg-[var(--panel-2)] px-4 py-3 text-sm outline-none focus:border-accent" />
+      <textarea required id="f-mensaje" rows="4" placeholder="Cuéntame qué necesitas" class="rounded-lg border border-[var(--line)] bg-[var(--panel-2)] px-4 py-3 text-sm outline-none focus:border-accent"></textarea>
+      <button type="submit" class="grad-btn rounded-full px-6 py-3 text-sm font-semibold text-[#150505]">
+        Enviar por WhatsApp
+      </button>
+      <p class="text-center text-[11px] text-[#6B6B75]">Este botón abre WhatsApp con tu mensaje ya escrito — no se guarda en ningún servidor.</p>
+    </form>
+  </div>
+</section>
+ 
+<footer class="border-t border-[var(--line)] py-8 text-center text-xs text-[#6B6B75]">
+  Rey Emiliano Romero Suárez — Desarrollador Full Stack
+</footer>
+ 
+<!-- ======= MODAL DEL DEMO ======= -->
+<div id="demo-modal" aria-hidden="true">
+  <div class="backdrop" id="demo-backdrop"></div>
+  <div class="modal-box browser-frame">
+    <div class="browser-frame__bar">
+      <span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-dot"></span>
+      <span id="demo-modal-label" class="ml-2 font-display text-xs text-[#6B6B75]"></span>
+      <button id="btn-cerrar-demo" class="ml-auto rounded-md px-2 py-1 text-sm text-[#9A9AA5] hover:text-white" aria-label="Cerrar demo">✕</button>
+    </div>
+    <iframe id="demo-iframe" src="" title="Demo interactiva del proyecto"></iframe>
+  </div>
+</div>
+ 
+<script src="js/main.js"></script>
+ 
+</body>
+</html>
